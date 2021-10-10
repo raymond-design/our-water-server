@@ -4,10 +4,10 @@
   "scope": "javax.xml.bind.JAXBElement$GlobalScope",
   "value": {
     "queryInfo": {
-      "queryURL": "http://waterservices.usgs.gov/nwis/iv/format=json&huc=02070010&parameterCd=00060&siteStatus=all",
+      "queryURL": "http://waterservices.usgs.gov/nwis/iv/format=json&huc=02070010&parameterCd=00065,00010&siteStatus=all",
       "criteria": {
         "locationParam": "[]",
-        "variableParam": "[00060]",
+        "variableParam": "[00065, 00010]",
         "parameter": []
       },
       "note": [
@@ -28,11 +28,11 @@
           "title": "filter:methodId"
         },
         {
-          "value": "2021-10-10T02:33:22.411Z",
+          "value": "2021-10-10T16:21:48.893Z",
           "title": "requestDT"
         },
         {
-          "value": "70010b90-2972-11ec-9da6-2cea7f5e5ede",
+          "value": "2b610c00-29e6-11ec-813b-2cea7f58f5ca",
           "title": "requestId"
         },
         {
@@ -40,12 +40,157 @@
           "title": "disclaimer"
         },
         {
-          "value": "sdas01",
+          "value": "vaas01",
           "title": "server"
         }
       ]
     },
     "timeSeries": [
+      {
+        "sourceInfo": {
+          "siteName": "POTOMAC RIVER AT WISCONSIN AVE, WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01647600",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9033611,
+              "longitude": -77.0676667
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ES",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "3.02",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:54:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[NAVD88]",
+                "methodID": 69944
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          },
+          {
+            "value": [
+              {
+                "value": "5.28",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:54:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[Washington Mean Low Water]",
+                "methodID": 69945
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01647600:00065:00000"
+      },
       {
         "sourceInfo": {
           "siteName": "TURKEY BRANCH NEAR ROCKVILLE, MD",
@@ -99,18 +244,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -123,17 +268,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "0.71",
+                "value": "4.33",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:15:00.000-04:00"
+                "dateTime": "2021-10-10T12:00:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -149,7 +294,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 69947
+                "methodID": 69946
               }
             ],
             "source": [],
@@ -158,7 +303,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01647850:00060:00000"
+        "name": "USGS:01647850:00065:00000"
       },
       {
         "sourceInfo": {
@@ -213,18 +358,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -237,17 +382,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "19.9",
+                "value": "1.83",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:15:00.000-04:00"
+                "dateTime": "2021-10-10T12:15:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -263,7 +408,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 69949
+                "methodID": 69950
               }
             ],
             "source": [],
@@ -272,7 +417,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01648000:00060:00000"
+        "name": "USGS:01648000:00065:00000"
       },
       {
         "sourceInfo": {
@@ -327,18 +472,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -351,17 +496,170 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "19.6",
+                "value": "-999999",
+                "qualifiers": [
+                  "P",
+                  "Dis"
+                ],
+                "dateTime": "2021-10-01T09:40:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "Dis",
+                "qualifierDescription": "Record has been discontinued at the measurement site.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              },
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 1,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "Upstream Location, [Discontinued]",
+                "methodID": 69953
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          },
+          {
+            "value": [
+              {
+                "value": "19.5",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:05:00.000-04:00"
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "[Downstream]",
+                "methodID": 290710
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01648010:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ROCK CREEK AT JOYCE RD WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01648010",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.96016667,
+              "longitude": -77.0420556
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.31",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -377,7 +675,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 69959
+                "methodID": 69952
               }
             ],
             "source": [],
@@ -386,7 +684,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01648010:00060:00000"
+        "name": "USGS:01648010:00065:00000"
       },
       {
         "sourceInfo": {
@@ -441,18 +739,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -465,17 +763,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "0.48",
+                "value": "1.60",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:50:00.000-04:00"
+                "dateTime": "2021-10-10T11:50:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -491,7 +789,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70002
+                "methodID": 70001
               }
             ],
             "source": [],
@@ -500,7 +798,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01649150:00060:00000"
+        "name": "USGS:01649150:00065:00000"
       },
       {
         "sourceInfo": {
@@ -555,18 +853,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -579,17 +877,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "4.56",
+                "value": "18.8",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:05:00.000-04:00"
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -605,7 +903,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70005
+                "methodID": 70008
               }
             ],
             "source": [],
@@ -614,7 +912,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01649190:00060:00000"
+        "name": "USGS:01649190:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "PAINT BRANCH NEAR COLLEGE PARK, MD",
+          "siteCode": [
+            {
+              "value": "01649190",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 39.0333611,
+              "longitude": -76.96402778
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.59",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70004
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01649190:00065:00000"
       },
       {
         "sourceInfo": {
@@ -669,18 +1081,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -693,17 +1105,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "20.7",
+                "value": "19.8",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:05:00.000-04:00"
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -719,7 +1131,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70013
+                "methodID": 70015
               }
             ],
             "source": [],
@@ -728,7 +1140,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01649500:00060:00000"
+        "name": "USGS:01649500:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NORTHEAST BRANCH ANACOSTIA RIVER AT RIVERDALE, MD",
+          "siteCode": [
+            {
+              "value": "01649500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.96025,
+              "longitude": -76.9259722
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.40",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70014
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01649500:00065:00000"
       },
       {
         "sourceInfo": {
@@ -783,18 +1309,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -807,17 +1333,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "5.90",
+                "value": "1.54",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:45:00.000-04:00"
+                "dateTime": "2021-10-10T11:45:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -833,7 +1359,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70024
+                "methodID": 70025
               }
             ],
             "source": [],
@@ -842,7 +1368,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01650500:00060:00000"
+        "name": "USGS:01650500:00065:00000"
       },
       {
         "sourceInfo": {
@@ -897,18 +1423,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -921,17 +1447,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "2.25",
+                "value": "19.1",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:15:00.000-04:00"
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -947,7 +1473,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70028
+                "methodID": 70029
               }
             ],
             "source": [],
@@ -956,7 +1482,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01650800:00060:00000"
+        "name": "USGS:01650800:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "SLIGO CREEK NEAR TAKOMA PARK, MD",
+          "siteCode": [
+            {
+              "value": "01650800",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9862222,
+              "longitude": -77.0048611
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.71",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T12:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70027
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01650800:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1011,18 +1651,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1035,17 +1675,131 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "14.7",
+                "value": "19.6",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:30:00.000-04:00"
+                "dateTime": "2021-10-10T11:30:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "Center of flow",
+                "methodID": 70040
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651000:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NORTHWEST BR ANACOSTIA RIVER NR HYATTSVILLE, MD",
+          "siteCode": [
+            {
+              "value": "01651000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.95255556,
+              "longitude": -76.96513889
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.26",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:30:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1061,7 +1815,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70037
+                "methodID": 70038
               }
             ],
             "source": [],
@@ -1070,7 +1824,235 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01651000:00060:00000"
+        "name": "USGS:01651000:00065:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ANACOSTIA RIVER AT BLADENSBURG WATERFRONT PARK, MD",
+          "siteCode": [
+            {
+              "value": "01651007",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.93416667,
+              "longitude": -76.93925
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ES",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00010",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807042,
+              "default": true
+            }
+          ],
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "deg C"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807042"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "20.7",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 299493
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651007:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ANACOSTIA RIVER AT BLADENSBURG WATERFRONT PARK, MD",
+          "siteCode": [
+            {
+              "value": "01651007",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.93416667,
+              "longitude": -76.93925
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ES",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.55",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:35:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 299896
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651007:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1125,18 +2107,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1149,17 +2131,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "106",
+                "value": "19.6",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:00:00.000-04:00"
+                "dateTime": "2021-10-10T12:00:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1175,7 +2157,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 249615
+                "methodID": 258778
               }
             ],
             "source": [],
@@ -1184,7 +2166,235 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01651730:00060:00000"
+        "name": "USGS:01651730:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "BEAVERDAM CREEK NEAR CHEVERLY, MD",
+          "siteCode": [
+            {
+              "value": "01651730",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.91630556,
+              "longitude": -76.9343056
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.93",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T12:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 164330
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651730:00065:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ANACOSTIA RIVER AQUATIC GARDENS AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651750",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9145,
+              "longitude": -76.9505
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ES",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.92",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "2017-10-18T10:48:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70044
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651750:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1239,18 +2449,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1263,17 +2473,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "0.19",
+                "value": "21.2",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:54:00.000-04:00"
+                "dateTime": "2021-10-10T10:36:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1289,7 +2499,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70047
+                "methodID": 70048
               }
             ],
             "source": [],
@@ -1298,7 +2508,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01651770:00060:00000"
+        "name": "USGS:01651770:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "HICKEY RUN AT NATIONAL ARBORETUM AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651770",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9161111,
+              "longitude": -76.9688611
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.90",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:54:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70046
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651770:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1353,18 +2677,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1377,17 +2701,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "0.41",
+                "value": "19.9",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:06:00.000-04:00"
+                "dateTime": "2021-10-10T10:36:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1403,7 +2727,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70055
+                "methodID": 70057
               }
             ],
             "source": [],
@@ -1412,7 +2736,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01651800:00060:00000"
+        "name": "USGS:01651800:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "WATTS BRANCH AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651800",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.90127778,
+              "longitude": -76.94327778
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "4.13",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T10:36:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70054
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651800:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1467,18 +2905,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1491,17 +2929,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "-2990",
+                "value": "21.8",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:15:00.000-04:00"
+                "dateTime": "2021-10-10T11:15:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1517,7 +2955,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 270567
+                "methodID": 245358
               }
             ],
             "source": [],
@@ -1526,7 +2964,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01651827:00060:00000"
+        "name": "USGS:01651827:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ANACOSTIA RIVER NR BUZZARD POINT AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651827",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.86516667,
+              "longitude": -77.0103333
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST-TS",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.74",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 245809
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651827:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1581,18 +3133,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -1605,17 +3157,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "5.58",
+                "value": "4.14",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:15:00.000-04:00"
+                "dateTime": "2021-10-10T12:00:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1631,7 +3183,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146621
+                "methodID": 146622
               }
             ],
             "source": [],
@@ -1640,7 +3192,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01652500:00060:00000"
+        "name": "USGS:01652500:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1695,18 +3247,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -1719,17 +3271,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "13.1",
+                "value": "3.85",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T22:20:00.000-04:00"
+                "dateTime": "2021-10-10T12:10:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1745,7 +3297,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146634
+                "methodID": 146635
               }
             ],
             "source": [],
@@ -1754,7 +3306,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01653000:00060:00000"
+        "name": "USGS:01653000:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1809,18 +3361,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -1833,17 +3385,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "3.24",
+                "value": "2.25",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:30:00.000-04:00"
+                "dateTime": "2021-10-10T11:30:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -1859,7 +3411,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 70062
+                "methodID": 70063
               }
             ],
             "source": [],
@@ -1868,7 +3420,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01653600:00060:00000"
+        "name": "USGS:01653600:00065:00000"
       },
       {
         "sourceInfo": {
@@ -1923,18 +3475,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -1947,17 +3499,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "2.74",
+                "value": "0.2",
                 "qualifiers": [
                   "A"
                 ],
-                "dateTime": "2015-01-13T23:55:00.000-05:00"
+                "dateTime": "2015-01-08T23:45:00.000-05:00"
               }
             ],
             "qualifier": [
@@ -1973,7 +3525,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146640
+                "methodID": 146641
               }
             ],
             "source": [],
@@ -1982,7 +3534,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:0165389205:00060:00000"
+        "name": "USGS:0165389205:00010:00000"
       },
       {
         "sourceInfo": {
@@ -2037,18 +3589,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -2061,17 +3613,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "3.58",
+                "value": "19.7",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:45:00.000-04:00"
+                "dateTime": "2021-10-08T10:00:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -2087,7 +3639,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146646
+                "methodID": 146647
               }
             ],
             "source": [],
@@ -2096,7 +3648,349 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01654000:00060:00000"
+        "name": "USGS:01654000:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ACCOTINK CREEK NEAR ANNANDALE, VA",
+          "siteCode": [
+            {
+              "value": "01654000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.81289066,
+              "longitude": -77.2283158
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.72",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146649
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654000:00065:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "LONG BRANCH AT OLLEY LANE NR FAIRFAX, VA",
+          "siteCode": [
+            {
+              "value": "01654107",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8246,
+              "longitude": -77.2667
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00010",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807042,
+              "default": true
+            }
+          ],
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "deg C"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807042"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "18.1",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:30:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 304938
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654107:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "LONG BRANCH AT OLLEY LANE NR FAIRFAX, VA",
+          "siteCode": [
+            {
+              "value": "01654107",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8246,
+              "longitude": -77.2667
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.22",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:30:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 304936
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654107:00065:00000"
       },
       {
         "sourceInfo": {
@@ -2151,18 +4045,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -2175,17 +4069,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "4.05",
+                "value": "19.0",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:55:00.000-04:00"
+                "dateTime": "2021-10-10T11:45:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -2201,7 +4095,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146657
+                "methodID": 146659
               }
             ],
             "source": [],
@@ -2210,7 +4104,121 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01654500:00060:00000"
+        "name": "USGS:01654500:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "LONG BRANCH NEAR ANNANDALE, VA",
+          "siteCode": [
+            {
+              "value": "01654500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8109462,
+              "longitude": -77.2349827
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-10T11:55:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146658
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654500:00065:00000"
       },
       {
         "sourceInfo": {
@@ -2265,18 +4273,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -2289,7 +4297,121 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "17.6",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-04-07T13:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 213305
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01655794:00010:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "TURKEY RUN AT ROUTE 643 NEAR CATLETT, VA",
+          "siteCode": [
+            {
+              "value": "01655794",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.67577778,
+              "longitude": -77.7475556
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51061",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
         },
         "values": [
           {
@@ -2323,7 +4445,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 223940
+                "methodID": 213302
               }
             ],
             "source": [],
@@ -2332,7 +4454,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01655794:00060:00000"
+        "name": "USGS:01655794:00065:00000"
       },
       {
         "sourceInfo": {
@@ -2387,18 +4509,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -2411,17 +4533,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "12.3",
+                "value": "2.20",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:45:00.000-04:00"
+                "dateTime": "2021-10-10T11:45:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -2437,7 +4559,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146673
+                "methodID": 146674
               }
             ],
             "source": [],
@@ -2446,349 +4568,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01656000:00060:00000"
-      },
-      {
-        "sourceInfo": {
-          "siteName": "CEDAR RUN NEAR ADEN, VA",
-          "siteCode": [
-            {
-              "value": "01656100",
-              "network": "NWIS",
-              "agencyCode": "USGS"
-            }
-          ],
-          "timeZoneInfo": {
-            "defaultTimeZone": {
-              "zoneOffset": "-05:00",
-              "zoneAbbreviation": "EST"
-            },
-            "daylightSavingsTimeZone": {
-              "zoneOffset": "-04:00",
-              "zoneAbbreviation": "EDT"
-            },
-            "siteUsesDaylightSavingsTime": true
-          },
-          "geoLocation": {
-            "geogLocation": {
-              "srs": "EPSG:4326",
-              "latitude": 38.6162316,
-              "longitude": -77.5541545
-            },
-            "localSiteXY": []
-          },
-          "note": [],
-          "siteType": [],
-          "siteProperty": [
-            {
-              "value": "ST",
-              "name": "siteTypeCd"
-            },
-            {
-              "value": "02070010",
-              "name": "hucCd"
-            },
-            {
-              "value": "51",
-              "name": "stateCd"
-            },
-            {
-              "value": "51153",
-              "name": "countyCd"
-            }
-          ]
-        },
-        "variable": {
-          "variableCode": [
-            {
-              "value": "00060",
-              "network": "NWIS",
-              "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
-              "default": true
-            }
-          ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
-          "valueType": "Derived Value",
-          "unit": {
-            "unitCode": "ft3/s"
-          },
-          "options": {
-            "option": [
-              {
-                "name": "Statistic",
-                "optionCode": "00000"
-              }
-            ]
-          },
-          "note": [],
-          "noDataValue": -999999,
-          "variableProperty": [],
-          "oid": "45807197"
-        },
-        "values": [
-          {
-            "value": [
-              {
-                "value": "46.0",
-                "qualifiers": [
-                  "A"
-                ],
-                "dateTime": "1999-02-24T23:45:00.000-05:00"
-              }
-            ],
-            "qualifier": [
-              {
-                "qualifierCode": "A",
-                "qualifierDescription": "Approved for publication -- Processing and review completed.",
-                "qualifierID": 0,
-                "network": "NWIS",
-                "vocabulary": "uv_rmk_cd"
-              }
-            ],
-            "qualityControlLevel": [],
-            "method": [
-              {
-                "methodDescription": "",
-                "methodID": 210169
-              }
-            ],
-            "source": [],
-            "offset": [],
-            "sample": [],
-            "censorCode": []
-          }
-        ],
-        "name": "USGS:01656100:00060:00000"
-      },
-      {
-        "sourceInfo": {
-          "siteName": "GOSLIN RUN NEAR ADEN, VA",
-          "siteCode": [
-            {
-              "value": "01656102",
-              "network": "NWIS",
-              "agencyCode": "USGS"
-            }
-          ],
-          "timeZoneInfo": {
-            "defaultTimeZone": {
-              "zoneOffset": "-05:00",
-              "zoneAbbreviation": "EST"
-            },
-            "daylightSavingsTimeZone": {
-              "zoneOffset": "-04:00",
-              "zoneAbbreviation": "EDT"
-            },
-            "siteUsesDaylightSavingsTime": true
-          },
-          "geoLocation": {
-            "geogLocation": {
-              "srs": "EPSG:4326",
-              "latitude": 38.61123175,
-              "longitude": -77.550821
-            },
-            "localSiteXY": []
-          },
-          "note": [],
-          "siteType": [],
-          "siteProperty": [
-            {
-              "value": "ST",
-              "name": "siteTypeCd"
-            },
-            {
-              "value": "02070010",
-              "name": "hucCd"
-            },
-            {
-              "value": "51",
-              "name": "stateCd"
-            },
-            {
-              "value": "51153",
-              "name": "countyCd"
-            }
-          ]
-        },
-        "variable": {
-          "variableCode": [
-            {
-              "value": "00060",
-              "network": "NWIS",
-              "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
-              "default": true
-            }
-          ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
-          "valueType": "Derived Value",
-          "unit": {
-            "unitCode": "ft3/s"
-          },
-          "options": {
-            "option": [
-              {
-                "name": "Statistic",
-                "optionCode": "00000"
-              }
-            ]
-          },
-          "note": [],
-          "noDataValue": -999999,
-          "variableProperty": [],
-          "oid": "45807197"
-        },
-        "values": [
-          {
-            "value": [
-              {
-                "value": "3.40",
-                "qualifiers": [
-                  "A"
-                ],
-                "dateTime": "2003-12-31T23:45:00.000-05:00"
-              }
-            ],
-            "qualifier": [
-              {
-                "qualifierCode": "A",
-                "qualifierDescription": "Approved for publication -- Processing and review completed.",
-                "qualifierID": 0,
-                "network": "NWIS",
-                "vocabulary": "uv_rmk_cd"
-              }
-            ],
-            "qualityControlLevel": [],
-            "method": [
-              {
-                "methodDescription": "",
-                "methodID": 210170
-              }
-            ],
-            "source": [],
-            "offset": [],
-            "sample": [],
-            "censorCode": []
-          }
-        ],
-        "name": "USGS:01656102:00060:00000"
-      },
-      {
-        "sourceInfo": {
-          "siteName": "CEDAR RUN AT RT 646 NEAR ADEN, VA",
-          "siteCode": [
-            {
-              "value": "01656120",
-              "network": "NWIS",
-              "agencyCode": "USGS"
-            }
-          ],
-          "timeZoneInfo": {
-            "defaultTimeZone": {
-              "zoneOffset": "-05:00",
-              "zoneAbbreviation": "EST"
-            },
-            "daylightSavingsTimeZone": {
-              "zoneOffset": "-04:00",
-              "zoneAbbreviation": "EDT"
-            },
-            "siteUsesDaylightSavingsTime": true
-          },
-          "geoLocation": {
-            "geogLocation": {
-              "srs": "EPSG:4326",
-              "latitude": 38.64150829,
-              "longitude": -77.5124873
-            },
-            "localSiteXY": []
-          },
-          "note": [],
-          "siteType": [],
-          "siteProperty": [
-            {
-              "value": "ST",
-              "name": "siteTypeCd"
-            },
-            {
-              "value": "02070010",
-              "name": "hucCd"
-            },
-            {
-              "value": "51",
-              "name": "stateCd"
-            },
-            {
-              "value": "51153",
-              "name": "countyCd"
-            }
-          ]
-        },
-        "variable": {
-          "variableCode": [
-            {
-              "value": "00060",
-              "network": "NWIS",
-              "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
-              "default": true
-            }
-          ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
-          "valueType": "Derived Value",
-          "unit": {
-            "unitCode": "ft3/s"
-          },
-          "options": {
-            "option": [
-              {
-                "name": "Statistic",
-                "optionCode": "00000"
-              }
-            ]
-          },
-          "note": [],
-          "noDataValue": -999999,
-          "variableProperty": [],
-          "oid": "45807197"
-        },
-        "values": [
-          {
-            "value": [
-              {
-                "value": "35.0",
-                "qualifiers": [
-                  "A"
-                ],
-                "dateTime": "2000-01-18T23:45:00.000-05:00"
-              }
-            ],
-            "qualifier": [
-              {
-                "qualifierCode": "A",
-                "qualifierDescription": "Approved for publication -- Processing and review completed.",
-                "qualifierID": 0,
-                "network": "NWIS",
-                "vocabulary": "uv_rmk_cd"
-              }
-            ],
-            "qualityControlLevel": [],
-            "method": [
-              {
-                "methodDescription": "",
-                "methodID": 210171
-              }
-            ],
-            "source": [],
-            "offset": [],
-            "sample": [],
-            "censorCode": []
-          }
-        ],
-        "name": "USGS:01656120:00060:00000"
+        "name": "USGS:01656000:00065:00000"
       },
       {
         "sourceInfo": {
@@ -2843,18 +4623,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00010",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807042,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Temperature, water, &#176;C",
+          "variableDescription": "Temperature, water, degrees Celsius",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "deg C"
           },
           "options": {
             "option": [
@@ -2867,17 +4647,17 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807042"
         },
         "values": [
           {
             "value": [
               {
-                "value": "1.10",
+                "value": "19.8",
                 "qualifiers": [
                   "P"
                 ],
-                "dateTime": "2021-10-09T21:55:00.000-04:00"
+                "dateTime": "2021-10-10T11:45:00.000-04:00"
               }
             ],
             "qualifier": [
@@ -2893,7 +4673,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 146679
+                "methodID": 146680
               }
             ],
             "source": [],
@@ -2902,14 +4682,14 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01656903:00060:00000"
+        "name": "USGS:01656903:00010:00000"
       },
       {
         "sourceInfo": {
-          "siteName": "NEABSCO CREEK AT DALE CITY, VA",
+          "siteName": "FLATLICK BRANCH ABOVE FROG BRANCH AT CHANTILLY, VA",
           "siteCode": [
             {
-              "value": "01657850",
+              "value": "01656903",
               "network": "NWIS",
               "agencyCode": "USGS"
             }
@@ -2928,8 +4708,8 @@
           "geoLocation": {
             "geogLocation": {
               "srs": "EPSG:4326",
-              "latitude": 38.64539567,
-              "longitude": -77.3469287
+              "latitude": 38.8823899,
+              "longitude": -77.4319047
             },
             "localSiteXY": []
           },
@@ -2949,7 +4729,7 @@
               "name": "stateCd"
             },
             {
-              "value": "51153",
+              "value": "51059",
               "name": "countyCd"
             }
           ]
@@ -2957,18 +4737,18 @@
         "variable": {
           "variableCode": [
             {
-              "value": "00060",
+              "value": "00065",
               "network": "NWIS",
               "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
+              "variableID": 45807202,
               "default": true
             }
           ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
           "valueType": "Derived Value",
           "unit": {
-            "unitCode": "ft3/s"
+            "unitCode": "ft"
           },
           "options": {
             "option": [
@@ -2981,23 +4761,23 @@
           "note": [],
           "noDataValue": -999999,
           "variableProperty": [],
-          "oid": "45807197"
+          "oid": "45807202"
         },
         "values": [
           {
             "value": [
               {
-                "value": "10.0",
+                "value": "1.04",
                 "qualifiers": [
-                  "A"
+                  "P"
                 ],
-                "dateTime": "1996-07-09T23:45:00.000-04:00"
+                "dateTime": "2021-10-10T11:55:00.000-04:00"
               }
             ],
             "qualifier": [
               {
-                "qualifierCode": "A",
-                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
                 "qualifierID": 0,
                 "network": "NWIS",
                 "vocabulary": "uv_rmk_cd"
@@ -3007,7 +4787,7 @@
             "method": [
               {
                 "methodDescription": "",
-                "methodID": 210172
+                "methodID": 146678
               }
             ],
             "source": [],
@@ -3016,121 +4796,7 @@
             "censorCode": []
           }
         ],
-        "name": "USGS:01657850:00060:00000"
-      },
-      {
-        "sourceInfo": {
-          "siteName": "NEABSCO CR TRIB AT TELEGRAPH RD NR DALE CITY, VA",
-          "siteCode": [
-            {
-              "value": "01657885",
-              "network": "NWIS",
-              "agencyCode": "USGS"
-            }
-          ],
-          "timeZoneInfo": {
-            "defaultTimeZone": {
-              "zoneOffset": "-05:00",
-              "zoneAbbreviation": "EST"
-            },
-            "daylightSavingsTimeZone": {
-              "zoneOffset": "-04:00",
-              "zoneAbbreviation": "EDT"
-            },
-            "siteUsesDaylightSavingsTime": true
-          },
-          "geoLocation": {
-            "geogLocation": {
-              "srs": "EPSG:4326",
-              "latitude": 38.6448396,
-              "longitude": -77.28720538
-            },
-            "localSiteXY": []
-          },
-          "note": [],
-          "siteType": [],
-          "siteProperty": [
-            {
-              "value": "ST",
-              "name": "siteTypeCd"
-            },
-            {
-              "value": "02070010",
-              "name": "hucCd"
-            },
-            {
-              "value": "51",
-              "name": "stateCd"
-            },
-            {
-              "value": "51153",
-              "name": "countyCd"
-            }
-          ]
-        },
-        "variable": {
-          "variableCode": [
-            {
-              "value": "00060",
-              "network": "NWIS",
-              "vocabulary": "NWIS:UnitValues",
-              "variableID": 45807197,
-              "default": true
-            }
-          ],
-          "variableName": "Streamflow, ft&#179;/s",
-          "variableDescription": "Discharge, cubic feet per second",
-          "valueType": "Derived Value",
-          "unit": {
-            "unitCode": "ft3/s"
-          },
-          "options": {
-            "option": [
-              {
-                "name": "Statistic",
-                "optionCode": "00000"
-              }
-            ]
-          },
-          "note": [],
-          "noDataValue": -999999,
-          "variableProperty": [],
-          "oid": "45807197"
-        },
-        "values": [
-          {
-            "value": [
-              {
-                "value": "0.11",
-                "qualifiers": [
-                  "A"
-                ],
-                "dateTime": "1996-07-10T23:55:00.000-04:00"
-              }
-            ],
-            "qualifier": [
-              {
-                "qualifierCode": "A",
-                "qualifierDescription": "Approved for publication -- Processing and review completed.",
-                "qualifierID": 0,
-                "network": "NWIS",
-                "vocabulary": "uv_rmk_cd"
-              }
-            ],
-            "qualityControlLevel": [],
-            "method": [
-              {
-                "methodDescription": "",
-                "methodID": 210173
-              }
-            ],
-            "source": [],
-            "offset": [],
-            "sample": [],
-            "censorCode": []
-          }
-        ],
-        "name": "USGS:01657885:00060:00000"
+        "name": "USGS:01656903:00065:00000"
       }
     ]
   },
