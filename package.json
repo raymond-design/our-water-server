@@ -1,0 +1,22 @@
+{
+  "name": "our-water-server",
+  "version": "1.0.0",
+  "description": "server side for the our-water app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "prod": "node server.js"
+  },
+  "author": "raymond yan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

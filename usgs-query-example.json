@@ -1,0 +1,3140 @@
+{
+  "name": "ns1:timeSeriesResponseType",
+  "declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+  "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+  "value": {
+    "queryInfo": {
+      "queryURL": "http://waterservices.usgs.gov/nwis/iv/format=json&huc=02070010&parameterCd=00060&siteStatus=all",
+      "criteria": {
+        "locationParam": "[]",
+        "variableParam": "[00060]",
+        "parameter": []
+      },
+      "note": [
+        {
+          "value": "[02070010]",
+          "title": "filter:huc"
+        },
+        {
+          "value": "Warning: not all sites have been associated with a hydrologic unit code.",
+          "title": "HucDisclaimer"
+        },
+        {
+          "value": "[mode=LATEST, modifiedSince=null]",
+          "title": "filter:timeRange"
+        },
+        {
+          "value": "methodIds=[ALL]",
+          "title": "filter:methodId"
+        },
+        {
+          "value": "2021-10-10T02:33:22.411Z",
+          "title": "requestDT"
+        },
+        {
+          "value": "70010b90-2972-11ec-9da6-2cea7f5e5ede",
+          "title": "requestId"
+        },
+        {
+          "value": "Provisional data are subject to revision. Go to http://waterdata.usgs.gov/nwis/help/?provisional for more information.",
+          "title": "disclaimer"
+        },
+        {
+          "value": "sdas01",
+          "title": "server"
+        }
+      ]
+    },
+    "timeSeries": [
+      {
+        "sourceInfo": {
+          "siteName": "TURKEY BRANCH NEAR ROCKVILLE, MD",
+          "siteCode": [
+            {
+              "value": "01647850",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 39.0684722,
+              "longitude": -77.08175
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.71",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 69947
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01647850:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ROCK CREEK AT SHERRILL DRIVE WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01648000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9725,
+              "longitude": -77.04
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "19.9",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 69949
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01648000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ROCK CREEK AT JOYCE RD WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01648010",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.96016667,
+              "longitude": -77.0420556
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "19.6",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:05:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 69959
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01648010:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "PAINT BRANCH TRIBUTARY NEAR COLESVILLE, MD",
+          "siteCode": [
+            {
+              "value": "01649150",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 39.08838889,
+              "longitude": -76.9895833
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.48",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:50:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70002
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01649150:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "PAINT BRANCH NEAR COLLEGE PARK, MD",
+          "siteCode": [
+            {
+              "value": "01649190",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 39.0333611,
+              "longitude": -76.96402778
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "4.56",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:05:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70005
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01649190:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NORTHEAST BRANCH ANACOSTIA RIVER AT RIVERDALE, MD",
+          "siteCode": [
+            {
+              "value": "01649500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.96025,
+              "longitude": -76.9259722
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "20.7",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:05:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70013
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01649500:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NORTHWEST BRANCH ANACOSTIA RIVER NR COLESVILLE, MD",
+          "siteCode": [
+            {
+              "value": "01650500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 39.06566667,
+              "longitude": -77.0293333
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "5.90",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70024
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01650500:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "SLIGO CREEK NEAR TAKOMA PARK, MD",
+          "siteCode": [
+            {
+              "value": "01650800",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9862222,
+              "longitude": -77.0048611
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24031",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.25",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70028
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01650800:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NORTHWEST BR ANACOSTIA RIVER NR HYATTSVILLE, MD",
+          "siteCode": [
+            {
+              "value": "01651000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.95255556,
+              "longitude": -76.96513889
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "14.7",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:30:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70037
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "BEAVERDAM CREEK NEAR CHEVERLY, MD",
+          "siteCode": [
+            {
+              "value": "01651730",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.91630556,
+              "longitude": -76.9343056
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "106",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 249615
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651730:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "HICKEY RUN AT NATIONAL ARBORETUM AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651770",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.9161111,
+              "longitude": -76.9688611
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.19",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:54:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70047
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651770:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "WATTS BRANCH AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651800",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.90127778,
+              "longitude": -76.94327778
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.41",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:06:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70055
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651800:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ANACOSTIA RIVER NR BUZZARD POINT AT WASHINGTON, DC",
+          "siteCode": [
+            {
+              "value": "01651827",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.86516667,
+              "longitude": -77.0103333
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST-TS",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "11",
+              "name": "stateCd"
+            },
+            {
+              "value": "11001",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "-2990",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 270567
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01651827:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "FOURMILE RUN AT ALEXANDRIA, VA",
+          "siteCode": [
+            {
+              "value": "01652500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8433333,
+              "longitude": -77.0858611
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51013",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "5.58",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:15:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146621
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01652500:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CAMERON RUN AT ALEXANDRIA, VA",
+          "siteCode": [
+            {
+              "value": "01653000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8044466,
+              "longitude": -77.10558989
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51510",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "13.1",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T22:20:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146634
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01653000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "PISCATAWAY CREEK AT PISCATAWAY, MD",
+          "siteCode": [
+            {
+              "value": "01653600",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.70577778,
+              "longitude": -76.9661944
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "24",
+              "name": "stateCd"
+            },
+            {
+              "value": "24033",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "3.24",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:30:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 70062
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01653600:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ACCOTINK CREEK NEAR RANGER ROAD AT FAIRFAX, VA",
+          "siteCode": [
+            {
+              "value": "0165389205",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.86624167,
+              "longitude": -77.2863833
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51600",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "2.74",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "2015-01-13T23:55:00.000-05:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146640
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:0165389205:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "ACCOTINK CREEK NEAR ANNANDALE, VA",
+          "siteCode": [
+            {
+              "value": "01654000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.81289066,
+              "longitude": -77.2283158
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "3.58",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146646
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "LONG BRANCH NEAR ANNANDALE, VA",
+          "siteCode": [
+            {
+              "value": "01654500",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8109462,
+              "longitude": -77.2349827
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "4.05",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:55:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146657
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01654500:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "TURKEY RUN AT ROUTE 643 NEAR CATLETT, VA",
+          "siteCode": [
+            {
+              "value": "01655794",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.67577778,
+              "longitude": -77.7475556
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51061",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "-999999",
+                "qualifiers": [
+                  "P",
+                  "Dis"
+                ],
+                "dateTime": "2021-04-07T13:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "Dis",
+                "qualifierDescription": "Record has been discontinued at the measurement site.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              },
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 1,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 223940
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01655794:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CEDAR RUN NEAR CATLETT, VA",
+          "siteCode": [
+            {
+              "value": "01656000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.63678689,
+              "longitude": -77.6249897
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51061",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "12.3",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146673
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01656000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CEDAR RUN NEAR ADEN, VA",
+          "siteCode": [
+            {
+              "value": "01656100",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.6162316,
+              "longitude": -77.5541545
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51153",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "46.0",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "1999-02-24T23:45:00.000-05:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 210169
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01656100:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "GOSLIN RUN NEAR ADEN, VA",
+          "siteCode": [
+            {
+              "value": "01656102",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.61123175,
+              "longitude": -77.550821
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51153",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "3.40",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "2003-12-31T23:45:00.000-05:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 210170
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01656102:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CEDAR RUN AT RT 646 NEAR ADEN, VA",
+          "siteCode": [
+            {
+              "value": "01656120",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.64150829,
+              "longitude": -77.5124873
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51153",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "35.0",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "2000-01-18T23:45:00.000-05:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 210171
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01656120:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "FLATLICK BRANCH ABOVE FROG BRANCH AT CHANTILLY, VA",
+          "siteCode": [
+            {
+              "value": "01656903",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.8823899,
+              "longitude": -77.4319047
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51059",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2021-10-09T21:55:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 146679
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01656903:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NEABSCO CREEK AT DALE CITY, VA",
+          "siteCode": [
+            {
+              "value": "01657850",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.64539567,
+              "longitude": -77.3469287
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51153",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "10.0",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "1996-07-09T23:45:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 210172
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01657850:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "NEABSCO CR TRIB AT TELEGRAPH RD NR DALE CITY, VA",
+          "siteCode": [
+            {
+              "value": "01657885",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 38.6448396,
+              "longitude": -77.28720538
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "02070010",
+              "name": "hucCd"
+            },
+            {
+              "value": "51",
+              "name": "stateCd"
+            },
+            {
+              "value": "51153",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "0.11",
+                "qualifiers": [
+                  "A"
+                ],
+                "dateTime": "1996-07-10T23:55:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "A",
+                "qualifierDescription": "Approved for publication -- Processing and review completed.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 210173
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:01657885:00060:00000"
+      }
+    ]
+  },
+  "nil": false,
+  "globalScope": true,
+  "typeSubstituted": false
+}
