@@ -7,11 +7,14 @@ const port = env_vars.port || 8000;
 
 const usgs = require('./api/usgs/usgs.route.js');
 const mapbox = require('./api/mapbox/mapbox.route.js');
+const news = require('./api/news/news.route.js');
 
 app.use(cors());
 
 app.use('/api/usgs', usgs);
-//app.use('/api/mapbox', mapbox): -not implmented yet
+//app.use('/api/mapbox', mapbox): -not implemented yet
+//app.use('/api/news', news): -not implemented yet
+
 app.use("*", (req, res) => res.status(404).json({ error: "invalid api request" }));
 
 app.listen(port, () => {
