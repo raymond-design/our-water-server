@@ -30,8 +30,8 @@ module.exports = {
 
   /**
    * @param {req, res} huc param - USGS' code assigned to a certain region
-   * @returns {object} an object of objects {LocationName, GageHeight, WaterTemp}
-   * v1 will return only LocationName, GageHieght, and Water Temp
+   * @returns {array} an array of objects {LocationName, GageHeight, GageHeightTime, WaterTemp, WaterTempTime}
+   * v1 will return those 5 values
    */
   huc: async (req, res) => {
     try {

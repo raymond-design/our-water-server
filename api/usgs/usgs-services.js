@@ -5,14 +5,14 @@
 module.exports = {
   /**
    * @param {data} object of the values to extract
-   * @returns {object} object of desired values
+   * @returns {array} array of objects of desired values
    * For v1, only gage height and water temp will be returned
    * Not every site has measurements on gage height and water temp, the sites that have only one measurement type will return null for the other measurement type
    */
   extractWaterValues: async (data) => {
     try {
 
-      let processedData = {};
+      let processedData = [];
     
     for (let i = 0; i < data.value.timeSeries.length; i++) {
       //if the site is a new site, push into array of vals, and set the other measurement value as null
@@ -56,7 +56,8 @@ module.exports = {
             gageHeightTime = processedData[dataPoint.sourceInfo.siteName].gageHeightTime;
           }
         }
-        processedData[dataPoint.sourceInfo.siteName]={gageHeight, gageHeightTime, waterTemp, waterTempTime};  
+        siteName = dataPoint.sourceInfo.siteName;
+        processedData.push({siteName, gageHeight, gageHeightTime, waterTemp, waterTempTime});  
     }
     //console.log(processedData)
     return processedData;
