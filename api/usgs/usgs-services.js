@@ -13,7 +13,6 @@ module.exports = {
     try {
 
       let processedData = [];
-    
     for (let i = 0; i < data.value.timeSeries.length; i++) {
       //if the site is a new site, push into array of vals, and set the other measurement value as null
       //if the site shows up again, the other measurement type will be set to the correct type
@@ -59,7 +58,6 @@ module.exports = {
         siteName = dataPoint.sourceInfo.siteName;
         processedData.push({siteName, gageHeight, gageHeightTime, waterTemp, waterTempTime});  
     }
-    //console.log(processedData)
     return processedData;
 
     } catch (error) {
