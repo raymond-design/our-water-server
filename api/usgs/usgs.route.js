@@ -1,5 +1,5 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 const {site, county, huc} = require('./usgs.controller.js');
 
 router.route('/site').get(site);
