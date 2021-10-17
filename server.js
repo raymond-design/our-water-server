@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/api/usgs', usgs);
 //app.use('/api/mapbox', mapbox): -not implemented yet
-//app.use('/api/news', news): -not implemented yet
+app.use('/api/news', news);
 
 app.use("*", (req, res) => res.status(404).json({ error: "invalid api request" }));
 

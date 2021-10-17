@@ -6,27 +6,37 @@ const newsapi = new NewsAPI(env_vars.newsApiKey);
 
 module.exports = {
   getArticles: (req,res) => {
-    query=req.params.query;
-    sources=req.params.sources;
-    domains=req.params.domains;
-    fromDate=req.params.fromDate;
-    toDate=req.params.toDate;
-    language=req.params.timeRange;
-    sortBy=req.params.sortBy;
-    pageNum=req.params.pageNum;
+    query=req.query.query;
+    sources=req.query.sources;
+    domains=req.query.domains;
+    fromDate=req.query.fromDate;
+    toDate=req.query.toDate;
+    language=req.query.language;
+    sortBy=req.query.sortBy;
+    pageNum=req.query.pageNum;
 
+    //according to newsapi, 1 of 3 params must be present:
+    if (query == undefined && sources == undefined && domains == undefined)
+    {
+      res.status(400).json({error: "Neccessary params missing"});
+      console.log(`Error. Neccessary params missing, failed at ${new Date().toString()}`);
+      return;
+    }
     //probably should check is params are acceptable somewhere here..
+
+    //todo: check that time range doesn't exceed last 30 days
+    
     newsapi.v2.everything({
       q: query,
       sources: sources,
       domains: domains,
-      from: timeRange.fromDate,
-      to: timeRange.toDate,
+      from: fromDate,
+      to: toDate,
       language: language,
       sortBy: sortBy,
       page: pageNum
     }).then(response => {
-      if (res.status == 'ok')
+      if (response.status == 'ok')
         { 
           res.status(200).json(response); 
           console.log(`Successful GET request made from NewsApi at ${new Date().toString()}`);
@@ -34,6 +44,7 @@ module.exports = {
       else 
         { res.status(500).json(response); 
           console.log(`Error. GET request from NewsApi failed at ${new Date().toString()}`);
+          console.log(response);
         }
     });
 
