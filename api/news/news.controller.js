@@ -26,6 +26,9 @@ module.exports = {
 
     //todo: check that time range doesn't exceed last 30 days
     
+    //need to query for more relevant articles
+    //and perhaps take user input for sources and other params
+    
     newsapi.v2.everything({
       q: query,
       sources: sources,
@@ -38,7 +41,7 @@ module.exports = {
     }).then(response => {
       if (response.status == 'ok')
         { 
-          res.status(200).json(response); 
+          res.status(200).json(response.articles); 
           console.log(`Successful GET request made from NewsApi at ${new Date().toString()}`);
         }
       else 
