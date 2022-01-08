@@ -1,5 +1,1 @@
-##Our Water Server
-
-Notice:
-The newsApi free api key only allows retrival of articles from the past 30 days
-
+1/8: Now containerized with the react app and nginx proxy!

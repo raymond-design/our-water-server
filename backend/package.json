@@ -4,9 +4,9 @@
   "description": "server side for the our-water app",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
-    "prod": "node server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "export NODE_ENV=test && mocha 'src/test/**/*.js'"
   },
   "author": "raymond yan",
   "license": "ISC",
