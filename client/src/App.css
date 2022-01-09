@@ -10,3 +10,29 @@ body {
   background-image: url(../public/background.jpg);
   overflow: hidden;
 }
+
+.title{
+  text-align: center;
+  color:rgb(94, 143, 233);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant-caps:all-small-caps;
+  font-style: italic;
+  font-weight: 400;
+  font-size:60px;
+  letter-spacing: 3px;
+}
+
+.title2{
+  text-align: center;
+  color:rgb(94, 143, 233);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant-caps:all-small-caps;
+  font-style: italic;
+  font-weight: 200;
+  font-size:30px;
+  letter-spacing: 5px;
+}
+
+.full{
+  height: 100vh;
+}

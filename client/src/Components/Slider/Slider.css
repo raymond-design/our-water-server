@@ -1,8 +1,9 @@
 .container-slider {
-  max-width: 700px;
-  height: 500px;
-  margin: 100px auto 0;
-  position: relative;
+  max-width: 80vw;
+  height: 65vh;
+  margin: 80px auto 0;
+  position:sticky;
+  top: 0;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -73,5 +74,5 @@
   background: #f1f1f1;
 }
 .dot.active {
-  background: #c8cce4;
+  background: #939df0;
 }
